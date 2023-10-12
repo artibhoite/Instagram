@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="TestNGClasses.VerifyLoginPage">
+        <methods>
+          <include name="toVerifyForgetPasswordPage"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="refreshPage"/>
+          <include name="toVerifySignUpPage"/>
+          <include name="openLoginPage"/>
+          <include name="creatingPOMObject"/>
+          <include name="clearObject"/>
+        </methods>
+      </class> <!-- TestNGClasses.VerifyLoginPage -->
+      <class name="TestNGClasses.VerifyHomePage">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="clearObject"/>
+          <include name="toVerifyProfilePhotoPage"/>
+          <include name="creatingPOMObject"/>
+          <include name="launchBrowser"/>
+          <include name="openProfilePage"/>
+          <include name="logOutFromApplication"/>
+        </methods>
+      </class> <!-- TestNGClasses.VerifyHomePage -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="2" parallel="classes" name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="TestNGClasses.VerifyLoginPage">
+        <methods>
+          <include name="toVerifyForgetPasswordPage"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="refreshPage"/>
+          <include name="toVerifySignUpPage"/>
+          <include name="openLoginPage"/>
+          <include name="creatingPOMObject"/>
+          <include name="clearObject"/>
+        </methods>
+      </class> <!-- TestNGClasses.VerifyLoginPage -->
+      <class name="TestNGClasses.VerifyHomePage">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="clearObject"/>
+          <include name="toVerifyProfilePhotoPage"/>
+          <include name="creatingPOMObject"/>
+          <include name="launchBrowser"/>
+          <include name="openProfilePage"/>
+          <include name="logOutFromApplication"/>
+        </methods>
+      </class> <!-- TestNGClasses.VerifyHomePage -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

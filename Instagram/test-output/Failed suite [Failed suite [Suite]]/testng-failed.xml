@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Failed suite [Suite]]]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ChromeTest(failed)(failed)(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="TestNGClasses.VerifyHomePage">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="toVerifySearchOption"/>
+          <include name="openProfilePage"/>
+          <include name="logOutFromApplication"/>
+        </methods>
+      </class> <!-- TestNGClasses.VerifyHomePage -->
+    </classes>
+  </test> <!-- ChromeTest(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Suite]]] -->
